@@ -1,0 +1,898 @@
+/* Sidebar styling */
+#sidebar {
+    min-height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #343a40;
+}
+
+#sidebar .sidebar-header {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #343a40;
+}
+
+#sidebar .list-unstyled {
+    padding-left: 0;
+    padding-left: 0px;
+}
+#sidebar .list-unstyled li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+#sidebar .list-unstyled li.active {
+    background-color: #495057;
+}
+
+#sidebar .list-unstyled li a {
+    color: #ffffff;
+    font-size: 13px;
+}
+.nav-item{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    list-style: none;
+    padding-left: 0px !important;
+}
+#page-content-wrapper {
+    margin-left: 250px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+#sidebar ul ul {
+    background: none;
+    padding-left: 0;
+}
+
+#sidebar ul ul li a {
+    font-size: 0.9rem;
+    padding-left: 2rem;
+}
+.fa-bell {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.badge {
+    font-size: 0.75rem;
+    padding: 0.25em 0.4em;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+
+#sidebar.toggled {
+    margin-left: -250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+#page-content-wrapper.toggled {
+    margin-left: 0;
+}
+.pointer{
+    cursor: pointer;
+}
+#iconbaradmin{
+    display: none;
+
+}
+#navbarmain{
+    position: fixed;
+    top: 0;
+    left: 250px; 
+    width: calc(100% - 250px);
+    z-index: 1;
+}
+#page-content-wrapper {
+    padding-top: 50px; /* Khoảng cách để tránh navbar che nội dung */
+}
+.navbarmainrom{
+    left: 0px !important; 
+    width: 100% !important;
+}
+
+@media (max-width: 576px) {
+    #sidebar {
+        position: absolute; /* Đổi thành position absolute để hiển thị trên cùng */
+        margin-left: -250px; /* Ẩn thanh bên */
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        z-index: 1000; /* Đảm bảo thanh bên hiển thị trên cùng */
+    }
+
+    #sidebar.toggled {
+        margin-left: 0; /* Hiện thanh bên */
+    }
+
+    #page-content-wrapper {
+        margin-left: 0; /* Nội dung không có margin bên trái */
+    }
+
+    .fa-bell {
+        font-size: 1.25rem; /* Giảm kích thước biểu tượng cho thiết bị nhỏ */
+    }
+    #iconbaradmin{
+        display: block;
+    }
+    #navbarmain{
+        left: 0px !important; 
+        width: 100% !important;
+    }
+    .headerpageadmin{
+        display: block !important;
+    }
+    .headerpageadmin * :not(.searchdivadmin input, i){
+        margin-top: 10px;
+    }
+    .search-wrapper{
+        display: block !important;
+    }
+    .tablediv table{
+        max-width: 100% !important;
+        overflow-x: scroll !important;
+    }
+}
+
+.table-responsive {
+    overflow-x: auto; /* Cho phép cuộn ngang nếu bảng quá rộng */
+    -webkit-overflow-scrolling: touch; /* Thêm hỗ trợ cuộn mượt trên iOS */
+}
+
+.table {
+    width: 100%; /* Bảng chiếm toàn bộ chiều rộng của khung chứa */
+    border-collapse: collapse; /* Xóa khoảng cách giữa các ô */
+}
+
+.table th, .table td {
+    padding: 10px; /* Khoảng cách bên trong các ô */
+    border: 1px solid #ddd; /* Đường viền cho các ô */
+    text-align: left; /* Canh trái nội dung trong ô */
+}
+.tablediv{
+    margin-top: 15px;
+    border: 1px solid #e3e3e3;
+    -webkit-box-shadow: 0 0 10px #d4d4d4;
+        box-shadow: 0 0 10px #d4d4d4;
+}
+.headertable{
+    /* background-color: #fafafa; */
+    padding: 7px 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.lbtable{
+    color: #5733dd;
+    font-weight: 500;
+}
+.divcontenttable{
+    background: #fff;
+    padding: 17px 20px;
+}
+.deletebtn{
+    color: #5733dd;
+    cursor: pointer;
+    font-weight: bold;
+}
+.dopmenu li a{
+    color: #000 !important;
+    margin-top: 10px !important;
+}
+.headertable{
+    position: relative;
+}
+.btntableheader{
+    position: absolute;
+    right: 20px;
+    height: 25px;
+    font-size: 13px;
+    border: none;
+    background: #5733dd;
+    color: #fff;
+    border-radius: 5px;
+}
+.lb-form{
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.inputdate{
+    width: 200px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.tinhtoancl{
+    display: none;
+}
+.tinhtoancl span{
+   font-size: 24px;
+   font-weight: bold;
+}
+.tinhtoancl img{
+   width: 140px;
+}
+.header-sp{
+    margin-bottom: 50px;
+}
+@keyframes barWidth {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 50%;
+    }
+    50% {
+        width: 100%;
+    }
+    75% {
+        width: 50%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes barWidth2 {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+#loading {
+    margin-top: 20px;
+    height: 4px;
+    width: 100%;
+    display: none;
+}
+
+.bar {
+    position: relative;
+    width: 0%;
+    height: 100%;
+    margin: 0 auto;
+    animation: barWidth;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.bar1 {
+    animation-delay: 0s;
+    background: #02a09a;
+    top: 0;
+    z-index: 1;
+}
+.icontable{
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+}
+#mainpageadmin{
+    font-size: 13px;
+}
+.activenavbar{
+    background-color: #8f8f8f;
+    padding-left: 10px;
+}
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.edit-btn {
+    background-color: #f39c12;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+.imgadmin{
+    width: 100px;
+}
+.blue-text{
+    color: blue !important;
+    font-weight: bold;
+}
+.searchdivadmin{
+    border: 1px solid #b3b3b3;
+    border-radius: 20px;
+    padding: 3px 10px;
+    background-color: #fff;
+}
+.searchdivadmin i{
+    color: #b3b3b3;
+}
+.searchdivadmin input{
+    border: none;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.searchdivadmin input:focus{
+    outline: none;
+}
+.divngayadmin{
+    margin-left: 10px;
+}
+.divngayadmin input{
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #9c9c9c;
+    padding: 3px 5px;
+}
+.btn-search-header{
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #9c9c9c;
+    padding: 3px 15px;
+    background: blue;
+    color: #fff;
+}
+.imgtable{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+.divcontenttable{
+    max-width: 100% !important;
+    overflow-x: scroll !important;
+}
+.tablediv table{
+    max-width: 100% !important;
+    overflow-x: scroll !important;
+}
+
+.checkbox-custom {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.checkbox-custom input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark-checkbox {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #8a8a8a;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.checkbox-custom:hover input~.checkmark-checkbox {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.checkbox-custom input:checked~.checkmark-checkbox {
+    background-color: #2196F3;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.checkbox-custom input:checked~.checkmark-checkbox:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.checkbox-custom .checkmark-checkbox:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox-custom {
+    display: inline-block;
+}
+.sticcol{
+    min-width: 100px;
+}
+.selectheader{
+    margin-left: 30px;
+}
+.pointer{
+    text-decoration: none;
+    cursor: pointer;
+}
+.imglogonavbar{
+    width: 80%;
+    margin-left: 10%;
+}
+.bg-dark{
+    background-color: #5733dd !important;
+}
+.imgblogindex{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.dsbaiviet{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.ngaytaobv{
+    display: block;
+    margin-top: 5px;
+}
+.tieudebv{
+    font-weight: 500;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+.singlebv{
+    text-decoration: none;
+    color: #000;
+}
+.ngaytaobv i{
+    color: #bc2626;
+}
+.motabv{
+    color: gray;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.noidungbaiviet{
+    margin-top: 30px;
+}
+.nguoidangbv{
+    margin-left: 30px;
+}
+.noidungchinhbv{
+    margin-top: 40px;
+}
+.noidungchinhbv img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.marginauto{
+    margin: auto;
+}
+
+.imgadmin{
+    width: 100px;
+}
+.iconaction {
+    font-size: 1.3rem;
+    color: #999;
+    cursor: pointer;
+    margin-right: 10px;
+}
+@keyframes barWidth {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 50%;
+    }
+    50% {
+        width: 100%;
+    }
+    75% {
+        width: 50%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes barWidth2 {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+#loading {
+    margin-top: 20px;
+    height: 4px;
+    width: 100%;
+    display: none;
+}
+
+.bar {
+    position: relative;
+    width: 0%;
+    height: 100%;
+    margin: 0 auto;
+    animation: barWidth;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.bar1 {
+    animation-delay: 0s;
+    background: #02a09a;
+    top: 0;
+    z-index: 1;
+}
+#chon-anhs{
+    height: 100px;
+}
+#anhdathem{
+    display: none;
+}
+#choose-image{
+    height: 120px;
+}
+.lbanhdathem{
+    margin-top: 30px;
+}
+.lbmotadv{
+    display: block;
+    margin-top: 50px;
+}
+
+.whitespace {
+    white-space: pre-wrap;
+ }
+.image-upload{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+ .choose-image {
+    width: 100%;
+    height: 300px;
+    background-color: #f4f4f4;
+    border: 3px dotted #fe9900;
+    cursor: pointer;
+}
+
+.choose-image p {
+    margin: auto;
+    text-align: center;
+}
+
+#camera {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #fe9900;
+}
+
+.upload-submit {
+    width: 100%;
+}
+.hidden{
+    visibility: hidden;
+}
+.border-left-1{
+    border-left: .25rem solid #4e73df;
+}
+.checkbox-custom {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.checkbox-custom input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark-checkbox {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #8a8a8a;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.checkbox-custom:hover input~.checkmark-checkbox {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.checkbox-custom input:checked~.checkmark-checkbox {
+    background-color: #2196F3;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.checkbox-custom input:checked~.checkmark-checkbox:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.checkbox-custom .checkmark-checkbox:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox-custom {
+    display: inline-block;
+    /* margin-left: 15px; */
+}
+.header-sp-thongke{
+    margin-bottom: 30px;
+}
+
+
+
+
+.headerdetail {
+    font-size: 0.9rem !important;
+}
+
+.headerdetail .yls {
+    font-size: 0.9rem !important;
+}
+
+.shipinfor {
+    margin-top: 30px;
+}
+
+.reciverName {
+    font-weight: bold;
+}
+
+.blockinfor {
+    min-height: 120px;
+    padding: 13px 25px 10px 20px;
+    border: 1px solid #DDE1EF;
+    background: none;
+    margin-top: 10px;
+}
+
+.blockinfor span {
+    color: #212B25;
+    font-size: 14px;
+    line-height: 16px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.ttshipinfor {
+    margin-top: 10px;
+}
+
+.imgdetailacc {
+    width: 100px;
+}
+.danhsachsptaiquay{
+    height: 400px;
+    overflow: scroll;
+}
+.boloctaiquay{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border: 1px solid gray;
+    padding: 30px;
+    font-size: 14px !important;
+}
+@media screen and (min-width: 992px) {
+    .col-lg-20p {
+        width: 20%;
+    }
+}
+.listsize {
+    margin-top: 10px;
+}
+
+.colorcdiv{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    min-width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px ;
+}
+.hetsp{
+    background-color: #d6d6d6;
+    cursor: auto;
+}
+.activecolor{
+    border: 2px solid red !important;
+}
+.btnthemgiohang{
+    width: 50%;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px #00000029;
+    border: 2px solid #FF5722;
+    color: #FF5722;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btnthemgiohang i{
+    width: 22px;
+    height: 22px;
+    fill: #00483d;
+}
+.disablethemgh{
+    background-color: #b0b0b0;
+    border: 1px solid #495057;
+    color: #fff;
+}
+.dssanphamhoadon{
+    margin-top: 20px;
+    position: relative;
+}
+.mahdcho{
+    margin-left: 20px;
+}
+.btnthemsanphamhd{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+.divrong{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;    /* Căn giữa theo chiều dọc */
+    height: 300px;          /* Chiều cao của thẻ div */
+}
+.imganhgiohangrong{
+    max-width: 100%;        /* Đảm bảo ảnh không vượt quá kích thước div */
+    max-height: 100%; 
+}
+.top30{
+    margin-top: 30px;
+}
+.dsChitietsp{
+    height: 500px;
+    overflow: scroll;
+}
+.inputtaiquay{
+    width: 70px;
+    border: 1px solid gray !important;
+    border-radius: 5px;
+}
+.square {
+    display: inline-block; /* Đảm bảo span là khối nội tuyến */
+    width: 24px;          /* Chiều rộng */
+    height: 12px;         /* Chiều cao */
+    text-align: center;   /* Căn giữa nội dung theo chiều ngang */
+    line-height: 24px;    /* Căn giữa nội dung theo chiều dọc */
+    color: white;         /* Màu chữ */
+    font-size: 14px;      /* Kích thước chữ */
+    font-weight: bold;    /* Đậm chữ */
+  }
+.btnthemhdct{
+    margin-left: 20px;
+}
+.divlistspct{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card{
+    padding-left: 20px;
+}
+.solieudoanhthu{
+    font-weight: bold;
+}
